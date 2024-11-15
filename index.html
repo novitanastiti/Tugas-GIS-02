@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      #map { height: 500px; width: 100%; }
+    </style>
+  </head>
+  <body>
+<p>NAMA : NOVITA NASTITI <br> NIM : 2157201329 <br> PROGAM STUDI : SISTEM INFORMASI <br> LOKASI : RUMAH SAYA <br> HASIL PETA DARI LEAFLET</p>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([-7.370937370713052, 110.1679060627262
+], 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      var marker = L.marker([-7.370937370713052, 110.1679060627262
+]).addTo(map)
+        .bindPopup('Lokasi RUMAH SAYA')
+        .openPopup();
+    </script>
+  </body>
+</html>
+
+
+
+
+
